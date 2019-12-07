@@ -1,0 +1,373 @@
+{
+  "employees": [
+    {
+      "id": 1575501974624,
+      "firstName": "Adam",
+      "lastName": "Sheaffer",
+      "departmentId": 1575559403192,
+      "isSupervisor": false,
+      "computerId": 1575566566333
+    },
+    {
+      "id": 1575501974625,
+      "firstName": "Madi",
+      "lastName": "Peper",
+      "departmentId": 1575559403193,
+      "isSupervisor": true,
+      "computerId": 1575566566334
+    },
+    {
+      "id": 1575501974626,
+      "firstName": "Andy",
+      "lastName": "Collins",
+      "departmentId": 1575559403192,
+      "isSupervisor": true,
+      "computerId": 1575566566335
+    },
+    {
+      "firstName": "Coach",
+      "lastName": "Steve",
+      "departmentId": 1575559403193,
+      "isSupervisor": true,
+      "id": 1575501974627,
+      "computerId": 1575566566337
+    }
+  ],
+  "computers": [
+    {
+      "id": 1575566566333,
+      "purchaseDate": "2016-01-01T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "Apple",
+      "model": "Macbook Pro"
+    },
+    {
+      "id": 1575566566334,
+      "purchaseDate": "2018-02-09T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "Apple",
+      "model": "Macbook Air"
+    },
+    {
+      "id": 1575566566335,
+      "purchaseDate": "2019-05-05T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "Microsoft",
+      "model": "Suface Pro"
+    },
+    {
+      "id": 1575566566336,
+      "purchaseDate": "2014-01-01T23:28:56.782Z",
+      "decomissionDate": "2017-03-01T23:28:56.782Z",
+      "make": "Lenovo",
+      "model": "Thinkpad X1"
+    },
+    {
+      "id": 1575566566337,
+      "purchaseDate": "2016-01-01T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "Apple",
+      "model": "Macbook Pro"
+    },
+    {
+      "id": 1575566566338,
+      "purchaseDate": "2016-01-01T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "System 76",
+      "model": "Oryx Pro"
+    },
+    {
+      "id": 1575566566339,
+      "purchaseDate": "2016-01-01T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "System 76",
+      "model": "Gazelle"
+    },
+    {
+      "purchaseDate": "2016-01-01T23:28:56.782Z",
+      "decomissionDate": null,
+      "make": "System 76",
+      "model": "Oryx Pro Lite",
+      "id": 1575593715306
+    },
+    {
+      "purchaseDate": "2016-01-01T00:00:00.000Z",
+      "decomissionDate": "1970-01-01T00:00:00.000Z",
+      "make": "System 76",
+      "model": "Oryx Pro Lite",
+      "id": 1575594029444
+    }
+  ],
+  "departments": [
+    {
+      "id": 1575559403192,
+      "name": "Marketing",
+      "budget": 4150000
+    },
+    {
+      "id": 1575559403193,
+      "name": "Engineering",
+      "budget": 572000
+    },
+    {
+      "id": 1575559403194,
+      "name": "Accounting",
+      "budget": 1230000
+    },
+    {
+      "id": 1575559403195,
+      "name": "Legal",
+      "budget": 9230000
+    }
+  ],
+  "trainingPrograms": [
+    {
+      "id": 1575559403194,
+      "name": "GIS Application",
+      "startDate": "2018-09-25T00:00:00.000Z",
+      "endDate": "2018-10-05T00:00:00.000Z",
+      "maxAttendees": 45
+    },
+    {
+      "id": 1575559403144,
+      "name": "Business Process",
+      "startDate": "2019-05-25T00:00:00.000Z",
+      "endDate": "2018-05-26T00:00:00.000Z",
+      "maxAttendees": 100
+    },
+    {
+      "id": 1575559403182,
+      "name": "Spanish 101",
+      "startDate": "2019-09-25T00:00:00.000Z",
+      "endDate": "20109-10-05T00:00:00.000Z",
+      "maxAttendees": 20
+    },
+    {
+      "id": 1575559403186,
+      "name": "Application Architecture",
+      "startDate": "2020-02-15T00:00:00.000Z",
+      "endDate": "2020-02-28T00:00:00.000Z",
+      "maxAttendees": 15
+    },
+    {
+      "name": "Ethical Hacking",
+      "startDate": "2020-02-16T00:00:00.000Z",
+      "endDate": "2020-02-28T00:00:00.000Z",
+      "maxAttendees": 15,
+      "id": 1575598914183
+    }
+  ],
+  "employeeTrainingPrograms": [
+    {
+      "id": 1575559403888,
+      "employeeId": 1575501974624,
+      "trainingProgramId": 1575559403186
+    },
+    {
+      "id": 1575559403898,
+      "employeeId": 1575501974624,
+      "trainingProgramId": 1575559403182
+    },
+    {
+      "id": 1575559403725,
+      "employeeId": 1575501974627,
+      "trainingProgramId": 1575559403182
+    },
+    {
+      "id": 1575559403725,
+      "employeeId": 1575501974625,
+      "trainingProgramId": 1575559403186
+    },
+    {
+      "id": 1575559403720,
+      "employeeId": 1575501974626,
+      "trainingProgramId": 1575559403186
+    }
+  ],
+  "customers": [
+    {
+      "id": 1575559407787,
+      "active": true,
+      "firstName": "Nathanael",
+      "lastName": "Laverenz"
+    },
+    {
+      "id": 1575559407788,
+      "active": true,
+      "firstName": "Chrissy",
+      "lastName": "Vivian"
+    },
+    {
+      "id": 1575559407789,
+      "active": true,
+      "firstName": "Halli",
+      "lastName": "Storten"
+    },
+    {
+      "id": 1575559407755,
+      "active": true,
+      "firstName": "Godfree",
+      "lastName": "Chase"
+    },
+    {
+      "id": 1575559407756,
+      "active": true,
+      "firstName": "Willi",
+      "lastName": "Warnes"
+    },
+    {
+      "id": 1575559407758,
+      "active": true,
+      "firstName": "Salmon",
+      "lastName": "O''Nions"
+    },
+    {
+      "id": 1575559407733,
+      "active": true,
+      "firstName": "Kimble",
+      "lastName": "Peskett"
+    },
+    {
+      "firstName": "Laura",
+      "lastName": "Darner",
+      "id": 1575608566734,
+      "active": false
+    }
+  ],
+  "products": [
+    {
+      "id": 15755594079866,
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407733,
+      "price": 12.25,
+      "title": "Bowl 14 Oz - Showcase 92012",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2019-08-25T00:00:00.000Z"
+    },
+    {
+      "id": 15755594079867,
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407755,
+      "price": 14,
+      "title": "Bowl 5 Oz - Showcase 92012",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2018-12-25T00:00:00.000Z"
+    },
+    {
+      "id": 15755594079868,
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407755,
+      "price": 30,
+      "title": "Cup 12 Oz - Showcase 92012",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2018-09-16T00:00:00.000Z"
+    },
+    {
+      "id": 15755594079869,
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407789,
+      "price": 1.25,
+      "title": "Bowl 12 Oz - Showcase 92012",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2019-12-05T00:00:00.000Z"
+    },
+    {
+      "id": 15755594079870,
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407789,
+      "price": 4.4,
+      "title": "Bowl 12 Oz - Showcase 92012",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2019-06-14:00:00.000Z"
+    },
+    {
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407733,
+      "price": 150,
+      "title": "Xbox One",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669305071
+    },
+    {
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407733,
+      "price": 8.75,
+      "title": "Cereal Bowl 12 Oz - Showcase 92012",
+      "description": "Lorem Ipsum",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394515
+    }
+  ],
+  "orders": [
+    {
+      "id": 1575559407665,
+      "customerId": 1575559407787,
+      "userPaymentId": null
+    },
+    {
+      "id": 1575559407876,
+      "customerId": 1575559407788,
+      "userPaymentId": "TODO"
+    }
+  ],
+  "orderProducts": [
+    {
+      "id": 1575559407990,
+      "orderId": 1575559407665,
+      "productId": 1575669394515
+    },
+    {
+      "id": 1575559407991,
+      "orderId": 1575559407665,
+      "productId": 15755594079868
+    },
+    {
+      "id": 1575559407991,
+      "orderId": 1575559407876,
+      "productId": 15755594079870
+    },
+    {
+      "id": 1575559407991,
+      "orderId": 1575559407876,
+      "productId": 15755594079868
+    },
+    {
+      "id": 1575693881953,
+      "orderId": 1575559407665,
+      "productId": 1575669305071
+    },
+    {
+      "id": 1575695920756,
+      "orderId": 1575559407665,
+      "productId": 15755594079870
+    }
+  ],
+  "paymentTypes": [
+    {
+      "id": 1575501974871,
+      "name": "Mastercard",
+      "active": true
+    },
+    {
+      "id": 1575501974872,
+      "name": "Visa",
+      "active": true
+    },
+    {
+      "id": 1575501974873,
+      "name": "Discover",
+      "active": true
+    },
+    {
+      "id": 1575501974874,
+      "name": "American Express",
+      "active": true
+    },
+    {
+      "name": "Diners Club",
+      "id": 1575696830296,
+      "active": false
+    }
+  ]
+}
