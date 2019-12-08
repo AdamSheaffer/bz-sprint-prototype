@@ -10,6 +10,8 @@ const customerFactory = require("./controllers/customerControllerFactory");
 const productFactory = require("./controllers/productControllerFactory");
 const orderFactory = require("./controllers/orderControllerFactory");
 const paymentTypeFactory = require("./controllers/paymentTypesControllerFactory");
+const userPaymentFactory = require("./controllers/userPaymentTypesControllerFactory");
+const productTypeFactory = require("./controllers/productTypeControllerFactory");
 
 const app = express();
 app.use(bodyParser.json());
@@ -97,6 +99,32 @@ low(adapter)
       "/api/paymentTypes/:id",
       paymentTypeController.removePaymentType
     );
+
+    // User Payment Types
+    const userPaymentController = userPaymentFactory(db);
+    app.get(
+      "/api/userPaymentTypes",
+      userPaymentController.getCustomerPaymentTypes
+    );
+    app.post(
+      "/api/userPaymentTypes",
+      userPaymentController.addCustomerPaymentType
+    );
+    app.put(
+      "/api/userPaymentTypes/:id",
+      userPaymentController.updatePaymentType
+    );
+    app.delete(
+      "/api/userPaymentTypes/:id",
+      userPaymentController.deleteUserPaymentType
+    );
+
+    // Product Types
+    const productTypeController = productTypeFactory(db);
+    app.get("/api/productTypes", productTypeController.getAllProductTypes);
+    app.get("/api/productTypes/:id", productTypeController.getProductType);
+    app.post("/api/productTypes", productTypeController.addProductType);
+    app.put("/api/productTypes/:id", productTypeController.updateProductType);
   })
   .then(() => {
     app.listen(8080, () => console.log("Listening on port 8080!"));

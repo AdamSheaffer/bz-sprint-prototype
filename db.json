@@ -369,5 +369,53 @@
       "id": 1575696830296,
       "active": false
     }
+  ],
+  "userPaymentTypes": [
+    {
+      "id": 1575501978463,
+      "customerId": 1575559407787,
+      "paymentTypeId": 1575501974871,
+      "acctNumber": "2234 56789 0123",
+      "active": true
+    },
+    {
+      "id": 1575501978464,
+      "customerId": 1575559407787,
+      "paymentTypeId": 1575501974872,
+      "acctNumber": "1234 5678 9012",
+      "active": true
+    },
+    {
+      "id": 1575501978465,
+      "customerId": 1575559407733,
+      "paymentTypeId": 1575501974871,
+      "acctNumber": "1234 56789 0123",
+      "active": true
+    },
+    {
+      "id": 1575501978466,
+      "customerId": 1575608566734,
+      "paymentTypeId": 1575501974874,
+      "acctNumber": "1234 56789 0123",
+      "active": true
+    }
+  ],
+  "productTypes": [
+    {
+      "id": 1575501970044,
+      "name": "Computers"
+    },
+    {
+      "id": 1575501970045,
+      "name": "Audio"
+    },
+    {
+      "id": 1575501970046,
+      "name": "Gaming"
+    },
+    {
+      "id": 1575501970047,
+      "name": "Accessories"
+    }
   ]
 }
