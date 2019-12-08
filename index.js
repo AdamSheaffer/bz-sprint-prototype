@@ -1,3 +1,4 @@
+const port = process.env.PORT || 8080;
 const express = require("express");
 const bodyParser = require("body-parser");
 const low = require("lowdb");
@@ -127,5 +128,7 @@ low(adapter)
     app.put("/api/productTypes/:id", productTypeController.updateProductType);
   })
   .then(() => {
-    app.listen(8080, () => console.log("Listening on port 8080!"));
+    app.listen(port, () =>
+      console.log(`👌👌👌 Listening on port ${port} 👌👌👌`)
+    );
   });
