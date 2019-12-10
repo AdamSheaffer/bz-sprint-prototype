@@ -443,19 +443,47 @@
   "productTypes": [
     {
       "id": 1575501970044,
-      "name": "Computers"
+      "name": "Tanks"
     },
     {
       "id": 1575501970045,
-      "name": "Audio"
+      "name": "Accessories"
     },
     {
       "id": 1575501970046,
-      "name": "Gaming"
+      "name": "Stands"
     },
     {
       "id": 1575501970047,
-      "name": "Accessories"
+      "name": "Filters"
+    },
+    {
+      "id": 157550197010,
+      "name": "Pebbles"
+    },
+    {
+      "id": 1575501970029,
+      "name": "Food"
+    },
+    {
+      "id": 1575501970098,
+      "name": "Cleaning Supplies"
+    },
+    {
+      "id": 1575501970012,
+      "name": "Bowls"
+    },
+    {
+      "id": 1575501970829,
+      "name": "Filters"
+    },
+    {
+      "id": 1575501970208,
+      "name": "Plants"
+    },
+    {
+      "id": 1575501970123,
+      "name": "Heaters"
     }
   ]
 }
