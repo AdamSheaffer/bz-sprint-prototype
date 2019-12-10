@@ -281,7 +281,7 @@
   "products": [
     {
       "id": 15755594079866,
-      "productTypeId": 1575559407749,
+      "productTypeId": 1575501970047,
       "customerId": 1575559407733,
       "price": 76.91,
       "description": "morbi ut odio cras mi pede malesuada in imperdiet et commodo",
@@ -299,7 +299,7 @@
     },
     {
       "id": 15755594079868,
-      "productTypeId": 1575559407749,
+      "productTypeId": 1575501970047,
       "customerId": 1575559407755,
       "price": 79.32,
       "description": "lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut",

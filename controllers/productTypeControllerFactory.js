@@ -7,9 +7,19 @@ const productTypeControllerFactory = db => {
 
   const getProductType = (req, res, next) => {
     const id = +req.params.id;
-    const productType = db.get("productTypes").find({ id });
+    const productType = db
+      .get("productTypes")
+      .find({ id })
+      .value();
 
     if (!productType) return res.status(404).send();
+
+    const products = db
+      .get("products")
+      .filter({ productTypeId: id })
+      .value();
+
+    productType.products = products;
 
     return res.json(productType);
   };
