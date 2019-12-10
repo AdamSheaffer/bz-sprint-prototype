@@ -237,7 +237,7 @@
   "products": [
     {
       "id": 15755594079866,
-      "productTypeId": 1575559407749,
+      "productTypeId": 1575501970047,
       "customerId": 1575559407733,
       "price": 12.25,
       "title": "Bowl 14 Oz - Showcase 92012",
@@ -246,7 +246,7 @@
     },
     {
       "id": 15755594079867,
-      "productTypeId": 1575559407749,
+      "productTypeId": 1575501970047,
       "customerId": 1575559407755,
       "price": 14,
       "title": "Bowl 5 Oz - Showcase 92012",
@@ -255,7 +255,7 @@
     },
     {
       "id": 15755594079868,
-      "productTypeId": 1575559407749,
+      "productTypeId": 1575501970047,
       "customerId": 1575559407755,
       "price": 30,
       "title": "Cup 12 Oz - Showcase 92012",
