@@ -6,7 +6,8 @@
       "lastName": "Sheaffer",
       "departmentId": 1575559403192,
       "isSupervisor": false,
-      "computerId": 1575566566333
+      "computerId": 1575566566333,
+      "email": "iamtheboss@bangazon.com"
     },
     {
       "id": 1575501974625,
@@ -14,7 +15,8 @@
       "lastName": "Peper",
       "departmentId": 1575559403193,
       "isSupervisor": true,
-      "computerId": 1575566566334
+      "computerId": 1575566566334,
+      "email": "everythingisawesome@bangzon.com"
     },
     {
       "id": 1575501974626,
@@ -22,7 +24,8 @@
       "lastName": "Collins",
       "departmentId": 1575559403192,
       "isSupervisor": true,
-      "computerId": 1575566566335
+      "computerId": 1575566566335,
+      "email": "losinghorn@bangazon.com"
     },
     {
       "firstName": "Coach",
@@ -30,7 +33,8 @@
       "departmentId": 1575559403193,
       "isSupervisor": true,
       "id": 1575501974627,
-      "computerId": 1575566566337
+      "computerId": 1575566566337,
+      "email": "coach@bangazon.com"
     }
   ],
   "computers": [
@@ -189,49 +193,89 @@
       "id": 1575559407787,
       "active": true,
       "firstName": "Nathanael",
-      "lastName": "Laverenz"
+      "lastName": "Laverenz",
+      "address": "401 Nunya Business Dr",
+      "city": "Herman",
+      "state": "New York",
+      "email": "n.lav@sbcglobal.net",
+      "phone": "6151237584"
     },
     {
       "id": 1575559407788,
       "active": true,
       "firstName": "Chrissy",
-      "lastName": "Vivian"
+      "lastName": "Vivian",
+      "address": "302 Puppy Way",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "email": "vivi@gmail.com",
+      "phone": "5782036593"
     },
     {
       "id": 1575559407789,
       "active": true,
       "firstName": "Halli",
-      "lastName": "Storten"
+      "lastName": "Storten",
+      "address": "404 Outtamai Way",
+      "city": "Los Angelos",
+      "state": "California",
+      "email": "halliday@hotmail.com",
+      "phone": "2893750183"
     },
     {
       "id": 1575559407755,
       "active": true,
       "firstName": "Godfree",
-      "lastName": "Chase"
+      "lastName": "Chase",
+      "address": "500 Internal Cir",
+      "city": "Topeka",
+      "state": "Kansas",
+      "email": "eerfdogesahc@gmail.com",
+      "phone": "1238693029"
     },
     {
       "id": 1575559407756,
       "active": true,
       "firstName": "Willi",
-      "lastName": "Warnes"
+      "lastName": "Warnes",
+      "address": "418 Teapot Way",
+      "city": "Seattle",
+      "state": "Washington",
+      "email": "willi.warnes@yahoo.com",
+      "phone": "7693025473"
     },
     {
       "id": 1575559407758,
       "active": true,
       "firstName": "Salmon",
-      "lastName": "O''Nions"
+      "lastName": "O''Nions",
+      "address": "100 Continue Blvd",
+      "city": "Atlanta",
+      "state": "Georgia",
+      "email": "salmonstriker@gmail.com",
+      "phone": "6151237584"
     },
     {
       "id": 1575559407733,
       "active": true,
       "firstName": "Kimble",
-      "lastName": "Peskett"
+      "lastName": "Peskett",
+      "address": "508 Loop Cir",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "email": "peskykimble@hotmail.com",
+      "phone": "5671234567"
     },
     {
       "firstName": "Laura",
       "lastName": "Darner",
       "id": 1575608566734,
-      "active": false
+      "active": false,
+      "address": "504 Timeout Way",
+      "city": "New York City",
+      "state": "New York",
+      "email": "laura.d@yahoo.com",
+      "phone": "1987654321"
     }
   ],
   "products": [
@@ -239,64 +283,136 @@
       "id": 15755594079866,
       "productTypeId": 1575501970047,
       "customerId": 1575559407733,
-      "price": 12.25,
-      "title": "Bowl 14 Oz - Showcase 92012",
-      "description": "Lorem Ipsum",
+      "price": 76.91,
+      "description": "morbi ut odio cras mi pede malesuada in imperdiet et commodo",
+      "title": "Passat",
       "dateAdded": "2019-08-25T00:00:00.000Z"
     },
     {
       "id": 15755594079867,
-      "productTypeId": 1575501970047,
+      "productTypeId": 1575501970045,
       "customerId": 1575559407755,
-      "price": 14,
-      "title": "Bowl 5 Oz - Showcase 92012",
-      "description": "Lorem Ipsum",
+      "price": 62.54,
+      "description": "pede ullamcorper augue a suscipit nulla elit ac nulla sed",
+      "title": "Murciélago LP640",
       "dateAdded": "2018-12-25T00:00:00.000Z"
     },
     {
       "id": 15755594079868,
       "productTypeId": 1575501970047,
       "customerId": 1575559407755,
-      "price": 30,
-      "title": "Cup 12 Oz - Showcase 92012",
-      "description": "Lorem Ipsum",
+      "price": 79.32,
+      "description": "lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut",
+      "title": "Loyale",
       "dateAdded": "2018-09-16T00:00:00.000Z"
     },
     {
       "id": 15755594079869,
       "productTypeId": 1575559407749,
       "customerId": 1575559407789,
-      "price": 1.25,
-      "title": "Bowl 12 Oz - Showcase 92012",
-      "description": "Lorem Ipsum",
+      "price": 10.94,
+      "description": "tristique in tempus sit amet sem fusce consequat nulla nisl nunc nisl",
+      "title": "Millenia",
       "dateAdded": "2019-12-05T00:00:00.000Z"
     },
     {
       "id": 15755594079870,
       "productTypeId": 1575559407749,
       "customerId": 1575559407789,
-      "price": 4.4,
-      "title": "Bowl 12 Oz - Showcase 92012",
-      "description": "Lorem Ipsum",
+      "price": 66.57,
+      "description": "eget nunc donec quis orci eget orci vehicula condimentum curabitur",
+      "title": "Accord",
       "dateAdded": "2019-06-14:00:00.000Z"
     },
     {
       "productTypeId": 1575559407749,
       "customerId": 1575559407733,
-      "price": 150,
-      "title": "Xbox One",
-      "description": "Lorem Ipsum",
+      "price": 79.92,
+      "description": "semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero",
+      "title": "Santa Fe",
       "dateAdded": "2019-09-25T00:00:00.000Z",
       "id": 1575669305071
     },
     {
       "productTypeId": 1575559407749,
-      "customerId": 1575559407733,
-      "price": 8.75,
-      "title": "Cereal Bowl 12 Oz - Showcase 92012",
-      "description": "Lorem Ipsum",
+      "customerId": 1575559407758,
+      "price": 9.09,
+      "description": "dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum sit amet",
+      "title": "A3",
       "dateAdded": "2019-09-25T00:00:00.000Z",
       "id": 1575669394515
+    },
+    {
+      "productTypeId": 1575501970029,
+      "customerId": 1575559407758,
+      "price": 20.93,
+      "description": "amet turpis elementum ligula vehicula consequat morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus",
+      "title": "Corvette",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394516
+    },
+    {
+      "productTypeId": 1575501970047,
+      "customerId": 1575559407758,
+      "price": 53.45,
+      "description": "faucibus orci luctus et ultrices posuere cubilia curae duis faucibus",
+      "title": "Discovery",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394517
+    },
+    {
+      "productTypeId": 1575501970208,
+      "customerId": 1575559407733,
+      "price": 18.28,
+      "description": "pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at",
+      "title": "SLX",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394518
+    },
+    {
+      "productTypeId": 157550197010,
+      "customerId": 1575559407755,
+      "price": 72.25,
+      "description": "sapien varius ut blandit non interdum in ante vestibulum ante ipsum primis",
+      "title": "Concorde",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394519
+    },
+    {
+      "productTypeId": 1575501970047,
+      "customerId": 1575559407733,
+      "price": 37.99,
+      "description": "eget nunc donec quis orci eget orci vehicula condimentum curabitur",
+      "title": "Windstar",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394520
+    },
+    {
+      "productTypeId": 157550197010,
+      "customerId": 1575559407755,
+      "price": 14.14,
+      "description": "curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis",
+      "title": "Sunbird",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394521
+    },
+    {
+      "productTypeId": 1575559407749,
+      "customerId": 1575559407788,
+      "price": 51.05,
+      "description": "nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at",
+      "title": "XC60",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394522
+    },
+    {
+      "productTypeId": 1575501970208,
+      "customerId": 1575559407787,
+      "price": 67.83,
+      "description": "consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus",
+      "title": "Rocky",
+      "dateAdded": "2019-09-25T00:00:00.000Z",
+      "id": 1575669394523
     }
   ],
   "orders": [
@@ -402,20 +518,48 @@
   ],
   "productTypes": [
     {
-      "id": 1575501970044,
-      "name": "Computers"
+      "id": 1575559407749,
+      "name": "Tanks"
     },
     {
       "id": 1575501970045,
-      "name": "Audio"
+      "name": "Accessories"
     },
     {
       "id": 1575501970046,
-      "name": "Gaming"
+      "name": "Stands"
     },
     {
       "id": 1575501970047,
-      "name": "Accessories"
+      "name": "Filters"
+    },
+    {
+      "id": 157550197010,
+      "name": "Pebbles"
+    },
+    {
+      "id": 1575501970029,
+      "name": "Food"
+    },
+    {
+      "id": 1575501970098,
+      "name": "Cleaning Supplies"
+    },
+    {
+      "id": 1575501970012,
+      "name": "Bowls"
+    },
+    {
+      "id": 1575501970829,
+      "name": "Filters"
+    },
+    {
+      "id": 1575501970208,
+      "name": "Plants"
+    },
+    {
+      "id": 1575501970123,
+      "name": "Heaters"
     }
   ]
 }
