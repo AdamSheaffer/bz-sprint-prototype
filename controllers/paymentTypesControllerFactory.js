@@ -8,6 +8,18 @@ const paymentTypesControllerFactory = db => {
     return res.json(paymentTypes);
   };
 
+  const getPaymentType = (req, res, next) => {
+    const id = +req.params.id;
+    const paymentType = db
+      .get("paymentTypes")
+      .find({ id })
+      .valeu();
+
+    if (!paymentType) return res.status(404).send();
+
+    return res.json(paymentType);
+  };
+
   const addPaymentType = (req, res, next) => {
     const paymentType = Object.assign(req.body, {
       id: Date.now(),
@@ -34,6 +46,7 @@ const paymentTypesControllerFactory = db => {
 
   return {
     getAllPaymentTypes,
+    getPaymentType,
     addPaymentType,
     removePaymentType
   };

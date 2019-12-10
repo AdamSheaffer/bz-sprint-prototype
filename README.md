@@ -40,11 +40,12 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 ### Payment Types
 
-| Description           | Endpoint              | Method | Request Body       | Response Body      |
-| --------------------- | --------------------- | ------ | ------------------ | ------------------ |
-| Get all payment types | api/paymentTypes      | GET    |                    | PaymentType Array  |
-| Add new payment type  | api/paymentTypes      | POST   | PaymentType Object | PaymentType Object |
-| Remove a payment type | api/paymentTypes/{id} | DELETE |                    |                    |
+| Description            | Endpoint              | Method | Request Body       | Response Body      |
+| ---------------------- | --------------------- | ------ | ------------------ | ------------------ |
+| Get all payment types  | api/paymentTypes      | GET    |                    | PaymentType Array  |
+| Get payment type by id | api/paymentTypes/{id} | GET    |                    | PaymentType Object |
+| Add new payment type   | api/paymentTypes      | POST   | PaymentType Object | PaymentType Object |
+| Remove a payment type  | api/paymentTypes/{id} | DELETE |                    |                    |
 
 ### User Payment Options
 
@@ -68,3 +69,55 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 \* Order objects that have a payment method that isn't NULL are considered complete and processed. An order that does not have a payment type would be considered a user's shopping cart. A user can have only one shopping cart, and therefore will only have a maximum of one Order record in the database with a NULL payment type at a given time.
 
 \*\* To purchase an order, update the Order object's `userPaymentId` property
+
+### Product Types
+
+| Description            | Endpoint              | Method | Request Body       | Response Body      |
+| ---------------------- | --------------------- | ------ | ------------------ | ------------------ |
+| Get all product types  | api/productTypes      | GET    |                    | ProductType Array  |
+| Get product type by Id | api/productTypes/{id} | GET    |                    | ProductType Object |
+| Add a product type     | api/productTypes      | POST   | ProductType Object | ProductType Object |
+| Update a product type  | api/productTypes/{id} | PUT    | ProductType Object | ProductType Object |
+
+### Employees
+
+| Description                 | Endpoint                                    | Method | Request Body    | Response Body   |
+| --------------------------- | ------------------------------------------- | ------ | --------------- | --------------- |
+| Get all employees           | api/employees                               | GET    |                 | Employee Array  |
+| Get employee by Id          | api/employees/{id}                          | GET    |                 | Employee Object |
+| Search for employee by name | api/employees?firstName=John&lastName=Smith | GET    |                 | Employee Array  |
+| Add an employee             | api/employees                               | POST   | Employee Object | Employee Object |
+| Update an employee          | api/employees/{id}                          | PUT    | Employee Object | Employee Object |
+
+### Departments
+
+| Description                   | Endpoint                               | Method | Request Body      | Response Body                 |
+| ----------------------------- | -------------------------------------- | ------ | ----------------- | ----------------------------- |
+| Get all departments           | api/departments                        | GET    |                   | Department Array              |
+| Get department by Id          | api/departments/{id}                   | GET    |                   | Department Object             |
+| Get department with employees | api/departments/{id}?include=employees | GET    |                   | Department Array w/ Employees |
+| Add a department              | api/departments                        | POST   | Department Object | Department Object             |
+| Update a department           | api/departments/{id}                   | PUT    | Department Object | Department Object             |
+
+### Computers
+
+| Description               | Endpoint                      | Method | Request Body    | Response Body   |
+| ------------------------- | ----------------------------- | ------ | --------------- | --------------- |
+| Get available computers   | api/computers?available=true  | GET    |                 | Computer Array  |
+| Get unavailable computers | api/computers?available=false | GET    |                 | Computer Array  |
+| Get computer by Id        | api/computers/{id}            | GET    |                 | Computer Object |
+| Add computer              | api/computers                 | POST   | Computer Object | Computer Object |
+| Update computer record    | api/computers/{id}            | PUT    | Computer Object | Computer Object |
+| Delete a computer record  | api/computers/{id}            | DELETE |                 |                 |
+
+### Training Programs
+
+| Description                      | Endpoint                                         | Method | Request Body           | Response Body                       |
+| -------------------------------- | ------------------------------------------------ | ------ | ---------------------- | ----------------------------------- |
+| Get upcoming training programs   | api/trainingPrograms                             | GET    |                        | TrainingProgram Array               |
+| Get training program by Id       | api/trainingPrograms/{id}                        | GET    |                        | TrainingProgram Object w/ Employees |
+| Add training program             | api/trainingPrograms                             | POST   | TrainingProgram Object | Training Program Object             |
+| Add employee to training program | api/trainingPrograms/{id}/employees              | POST   | Employee Object        | TrainingProgram Object w/ Employees |
+| Update training program          | api/trainingPrograms/{id}                        | PUT    | TrainingProgram Object | TrainingProgram Object              |
+| Remove training program          | api/trainingPrograms/{id}                        | DELETE |                        |                                     |
+| Remove employee from program     | api/trainingPrograms/{id}/employees/{employeeId} | DELETE |                        |                                     |

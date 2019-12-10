@@ -1,6 +1,11 @@
 const trainingProgramsControllerFactory = db => {
   const getAllTrainingPrograms = (req, res, next) => {
-    const programs = db.get("trainingPrograms").value();
+    const programs = db
+      .get("trainingPrograms")
+      .filter(tp => {
+        return new Date(tp.startDate) > new Date();
+      })
+      .value();
 
     return res.json(programs);
   };
