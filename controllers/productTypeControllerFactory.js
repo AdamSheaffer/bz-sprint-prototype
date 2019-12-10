@@ -7,7 +7,6 @@ const productTypeControllerFactory = db => {
 
   const getProductType = (req, res, next) => {
     const id = +req.params.id;
-    const { include } = req.query;
     const productType = db
       .get("productTypes")
       .find({ id })
@@ -15,14 +14,12 @@ const productTypeControllerFactory = db => {
 
     if (!productType) return res.status(404).send();
 
-    if (include === "products") {
-      const products = db
-        .get("products")
-        .filter({ productTypeId: id })
-        .value();
+    const products = db
+      .get("products")
+      .filter({ productTypeId: id })
+      .value();
 
-      productType.products = products;
-    }
+    productType.products = products;
 
     return res.json(productType);
   };
