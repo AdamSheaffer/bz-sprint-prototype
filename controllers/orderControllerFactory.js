@@ -24,7 +24,7 @@ const orderControllerFactory = db => {
   };
 
   const getAllOrders = (req, res, next) => {
-    const { customerId } = req.query || {};
+    const { customerId, cart } = req.query || {};
 
     if (!customerId) {
       return res
@@ -52,6 +52,12 @@ const orderControllerFactory = db => {
           return order;
         })
         .value();
+
+      if (cart) {
+        const shoppingCart = orders.find(o => !o.userPaymentId);
+
+        return res.json(shoppingCart);
+      }
 
       return res.json(orders);
     }
