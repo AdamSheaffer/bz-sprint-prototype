@@ -189,49 +189,89 @@
       "id": 1575559407787,
       "active": true,
       "firstName": "Nathanael",
-      "lastName": "Laverenz"
+      "lastName": "Laverenz",
+      "address": "401 Nunya Business Dr",
+      "city": "Herman",
+      "state": "New York",
+      "email": "n.lav@sbcglobal.net",
+      "phone": "6151237584"
     },
     {
       "id": 1575559407788,
       "active": true,
       "firstName": "Chrissy",
-      "lastName": "Vivian"
+      "lastName": "Vivian",
+      "address": "302 Puppy Way",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "email": "vivi@gmail.com",
+      "phone": "5782036593"
     },
     {
       "id": 1575559407789,
       "active": true,
       "firstName": "Halli",
-      "lastName": "Storten"
+      "lastName": "Storten",
+      "address": "404 Outtamai Way",
+      "city": "Los Angelos",
+      "state": "California",
+      "email": "halliday@hotmail.com",
+      "phone": "2893750183"
     },
     {
       "id": 1575559407755,
       "active": true,
       "firstName": "Godfree",
-      "lastName": "Chase"
+      "lastName": "Chase",
+      "address": "500 Internal Cir",
+      "city": "Topeka",
+      "state": "Kansas",
+      "email": "eerfdogesahc@gmail.com",
+      "phone": "1238693029"
     },
     {
       "id": 1575559407756,
       "active": true,
       "firstName": "Willi",
-      "lastName": "Warnes"
+      "lastName": "Warnes",
+      "address": "418 Teapot Way",
+      "city": "Seattle",
+      "state": "Washington",
+      "email": "willi.warnes@yahoo.com",
+      "phone": "7693025473"
     },
     {
       "id": 1575559407758,
       "active": true,
       "firstName": "Salmon",
-      "lastName": "O''Nions"
+      "lastName": "O''Nions",
+      "address": "100 Continue Blvd",
+      "city": "Atlanta",
+      "state": "Georgia",
+      "email": "salmonstriker@gmail.com",
+      "phone": "6151237584"
     },
     {
       "id": 1575559407733,
       "active": true,
       "firstName": "Kimble",
-      "lastName": "Peskett"
+      "lastName": "Peskett",
+      "address": "508 Loop Cir",
+      "city": "Nashville",
+      "state": "Tennessee",
+      "email": "peskykimble@hotmail.com",
+      "phone": "5671234567"
     },
     {
       "firstName": "Laura",
       "lastName": "Darner",
       "id": 1575608566734,
-      "active": false
+      "active": false,
+      "address": "504 Timeout Way",
+      "city": "New York City",
+      "state": "New York",
+      "email": "laura.d@yahoo.com",
+      "phone": "1987654321"
     }
   ],
   "products": [
