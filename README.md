@@ -130,6 +130,7 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 {
     "id": 1575559407787,
     "active": true,
+    "createdDate": "2019-08-25T00:00:00.000Z",
     "firstName": "Nathanael",
     "lastName": "Laverenz",
     "address": "401 Nunya Business Dr",
@@ -146,6 +147,7 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 {
     "id": 1575559407733,
     "active": true,
+    "createdDate": "2019-08-25T00:00:00.000Z",
     "firstName": "Kimble",
     "lastName": "Peskett",
     "address": "508 Loop Cir",

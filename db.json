@@ -192,6 +192,7 @@
     {
       "id": 1575559407787,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Nathanael",
       "lastName": "Laverenz",
       "address": "401 Nunya Business Dr",
@@ -203,6 +204,7 @@
     {
       "id": 1575559407788,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Chrissy",
       "lastName": "Vivian",
       "address": "302 Puppy Way",
@@ -214,6 +216,7 @@
     {
       "id": 1575559407789,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Halli",
       "lastName": "Storten",
       "address": "404 Outtamai Way",
@@ -225,6 +228,7 @@
     {
       "id": 1575559407755,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Godfree",
       "lastName": "Chase",
       "address": "500 Internal Cir",
@@ -236,6 +240,7 @@
     {
       "id": 1575559407756,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Willi",
       "lastName": "Warnes",
       "address": "418 Teapot Way",
@@ -247,6 +252,7 @@
     {
       "id": 1575559407758,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Salmon",
       "lastName": "O''Nions",
       "address": "100 Continue Blvd",
@@ -258,6 +264,7 @@
     {
       "id": 1575559407733,
       "active": true,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "firstName": "Kimble",
       "lastName": "Peskett",
       "address": "508 Loop Cir",
@@ -271,6 +278,7 @@
       "lastName": "Darner",
       "id": 1575608566734,
       "active": false,
+      "createdDate": "2019-08-25T00:00:00.000Z",
       "address": "504 Timeout Way",
       "city": "New York City",
       "state": "New York",
