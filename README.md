@@ -121,3 +121,169 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 | Update training program          | api/trainingPrograms/{id}                        | PUT    | TrainingProgram Object | TrainingProgram Object              |
 | Remove training program          | api/trainingPrograms/{id}                        | DELETE |                        |                                     |
 | Remove employee from program     | api/trainingPrograms/{id}/employees/{employeeId} | DELETE |                        |                                     |
+
+## Models
+
+### Customer
+
+```js
+{
+    "id": 1575559407787,
+    "active": true,
+    "firstName": "Nathanael",
+    "lastName": "Laverenz",
+    "address": "401 Nunya Business Dr",
+    "city": "Herman",
+    "state": "New York",
+    "email": "n.lav@sbcglobal.net",
+    "phone": "6151237584"
+}
+```
+
+### Customer w/ Products
+
+```js
+{
+    "id": 1575559407733,
+    "active": true,
+    "firstName": "Kimble",
+    "lastName": "Peskett",
+    "address": "508 Loop Cir",
+    "city": "Nashville",
+    "state": "Tennessee",
+    "email": "peskykimble@hotmail.com",
+    "phone": "5671234567",
+    "products": [
+        {
+            "id": 15755594079866,
+            "productTypeId": 1575501970047,
+            "customerId": 1575559407733,
+            "price": 76.91,
+            "description": "morbi ut odio cras mi pede malesuada in imperdiet et commodo",
+            "title": "Passat",
+            "dateAdded": "2019-08-25T00:00:00.000Z"
+        },
+        {
+            "productTypeId": 1575559407749,
+            "customerId": 1575559407733,
+            "price": 79.92,
+            "description": "semper rutrum nulla nunc purus phasellus in felis donec semper sapien a libero",
+            "title": "Santa Fe",
+            "dateAdded": "2019-09-25T00:00:00.000Z",
+            "id": 1575669305071
+        }
+    ]
+}
+```
+
+### Product
+
+```js
+{
+    "id": 15755594079867,
+    "productTypeId": 1575501970045,
+    "customerId": 1575559407755,
+    "price": 62.54,
+    "description": "pede ullamcorper augue a suscipit nulla elit ac nulla sed",
+    "title": "Murciélago LP640",
+    "dateAdded": "2018-12-25T00:00:00.000Z"
+}
+```
+
+### PaymentType
+
+```js
+{
+    "id": 1575501974871,
+    "name": "Mastercard",
+    "active": true
+}
+```
+
+### UserPaymentType
+
+```js
+{
+    "id": 1575501978463,
+    "customerId": 1575559407787,
+    "paymentTypeId": 1575501974871,
+    "acctNumber": "2234 56789 0123",
+    "active": true
+}
+```
+
+### Order
+
+```js
+{
+    "id": 1575559407665,
+    "customerId": 1575559407787,
+    "userPaymentId": null
+}
+```
+
+### CustomerProduct
+
+```js
+{
+    "customerId": 1575559407787,
+    "productId": 1575501970208
+}
+```
+
+### ProductType
+
+```js
+{
+    "id": 1575501970045,
+    "name": "Accessories"
+}
+```
+
+### Employee
+
+```js
+{
+    "id": 1575501974625,
+    "firstName": "Madi",
+    "lastName": "Peper",
+    "departmentId": 1575559403193,
+    "isSupervisor": true,
+    "computerId": 1575566566334,
+    "email": "everythingisawesome@bangzon.com"
+}
+```
+
+### Department
+
+```js
+{
+    "id": 1575559403194,
+    "name": "Accounting",
+    "budget": 1230000
+}
+```
+
+### Computers
+
+```js
+{
+    "id": 1575566566333,
+    "purchaseDate": "2016-01-01T23:28:56.782Z",
+    "decomissionDate": null,
+    "make": "Apple",
+    "model": "Macbook Pro"
+}
+```
+
+### TrainingProgram
+
+```js
+{
+    "id": 1575559403194,
+    "name": "GIS Application",
+    "startDate": "2018-09-25T00:00:00.000Z",
+    "endDate": "2018-10-05T00:00:00.000Z",
+    "maxAttendees": 45
+}
+```
