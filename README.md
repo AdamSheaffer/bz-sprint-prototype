@@ -16,10 +16,10 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                               | Endpoint                            | Method | Request Body    | Response Body                     |
 | ----------------------------------------- | ----------------------------------- | ------ | --------------- | --------------------------------- |
-| Get all customers                         | api/customers                       | GET    |                 | Customer Array                    |
-| Search for customer                       | api/customers?q={someSearchTerm}    | GET    |                 | Customer Array                    |
-| Get customer by Id                        | api/customers/{id}                  | GET    |                 | Customer Object                   |
-| Get customer and include product listings | api/customers/{id}?include=products | GET    |                 | Customer Object w/ Products Array |
+| Get all customers                         | [api/customers](https://bangazon-prototype-api.herokuapp.com/api/customers)                       | GET    |                 | Customer Array                    |
+| Search for customer                       | [api/customers?q={someSearchTerm}](https://bangazon-prototype-api.herokuapp.com/api/customers?q=Salmon)    | GET    |                 | Customer Array                    |
+| Get customer by Id                        | [api/customers/{id}](https://bangazon-prototype-api.herokuapp.com/api/customers/1575559407787)                | GET    |                 | Customer Object                   |
+| Get customer and include product listings | [api/customers/{id}?include=products](https://bangazon-prototype-api.herokuapp.com/api/customers/1575559407755?include=products) | GET    |                 | Customer Object w/ Products Array |
 | Add a customer                            | api/customers                       | POST   | Customer Object | Customer Object                   |
 | Update a customer                         | api/customers/{id}                  | PUT    | Customer Object | Customer Object                   |
 | Make customer inactive                    | api/customer/{id}                   | DELETE |                 |                                   |
@@ -28,12 +28,12 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                      | Endpoint                            | Method | Request Body   | Response Body  |
 | -------------------------------- | ----------------------------------- | ------ | -------------- | -------------- |
-| Get all products                 | api/products                        | GET    |                | Product Array  |
-| Search products by name          | api/products?q={searchTerm}         | GET    |                | Product Array  |
-| Sort products by most recent     | api/products?sortBy=recent          | GET    |                | Product Array  |
-| Sort products by popularity      | api/products?sortBy=popularity      | GET    |                | Product Array  |
-| Sort products by least expensive | api/products?sortBy=price&asc=true  | GET    |                | Product Array  |
-| Sort products by most expensive  | api/products?sortBy=price&asc=false | GET    |                | Product Array  |
+| Get all products                 | [api/products](https://bangazon-prototype-api.herokuapp.com/api/products)                        | GET    |                | Product Array  |
+| Search products by name          | [api/products?q={searchTerm}](https://bangazon-prototype-api.herokuapp.com/api/products?q=Accord)         | GET    |                | Product Array  |
+| Sort products by most recent     | [api/products?sortBy=recent](https://bangazon-prototype-api.herokuapp.com/api/products?sortBy=recent)          | GET    |                | Product Array  |
+| Sort products by popularity      | [api/products?sortBy=popularity](https://bangazon-prototype-api.herokuapp.com/api/products?sortBy=popularity)      | GET    |                | Product Array  |
+| Sort products by least expensive | [api/products?sortBy=price&asc=true](https://bangazon-prototype-api.herokuapp.com/api/products?sortBy=price&asc=true)  | GET    |                | Product Array  |
+| Sort products by most expensive  | [api/products?sortBy=price&asc=false](https://bangazon-prototype-api.herokuapp.com/api/products?sortBy=price&asc=false) | GET    |                | Product Array  |
 | Add a new product                | api/products                        | POST   | Product Object | Product Object |
 | Update a product                 | api/products/{id}                   | PUT    | Product Object | Product Object |
 | Remove a product                 | api/products/{id}                   | DELETE |                |                |
@@ -42,8 +42,8 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description            | Endpoint              | Method | Request Body       | Response Body      |
 | ---------------------- | --------------------- | ------ | ------------------ | ------------------ |
-| Get all payment types  | api/paymentTypes      | GET    |                    | PaymentType Array  |
-| Get payment type by id | api/paymentTypes/{id} | GET    |                    | PaymentType Object |
+| Get all payment types  | [api/paymentTypes](https://bangazon-prototype-api.herokuapp.com/api/paymentTypes)      | GET    |                    | PaymentType Array  |
+| Get payment type by id | [api/paymentTypes/{id}](https://bangazon-prototype-api.herokuapp.com/api/paymentTypes/1575501974872) | GET    |                    | PaymentType Object |
 | Add new payment type   | api/paymentTypes      | POST   | PaymentType Object | PaymentType Object |
 | Remove a payment type  | api/paymentTypes/{id} | DELETE |                    |                    |
 
@@ -51,7 +51,7 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                       | Endpoint                                      | Method | Request Body           | Response Body          |
 | --------------------------------- | --------------------------------------------- | ------ | ---------------------- | ---------------------- |
-| Get a customer's payment options  | api/userPaymentTypes?customerId={customer id} | GET    |                        | UserPaymentType Array  |
+| Get a customer's payment options  | [api/userPaymentTypes?customerId={customer id}](https://bangazon-prototype-api.herokuapp.com/api/userPaymentTypes?customerId=1575559407787) | GET    |                        | UserPaymentType Array  |
 | Add a payment option for customer | api/userPaymentTypes                          | POST   | UserPaymentType Object | UserPaymentType Object |
 | Update customer payment option    | api/userPaymentTypes/{id}                     | PUT    | UserPaymentType Object | UserPaymentType Object |
 | Remove customer payment option    | api/userPaymentTypes/{id}                     | DELETE |                        |                        |
@@ -60,8 +60,8 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                    | Endpoint                                 | Method | Request Body           | Response Body |
 | ------------------------------ | ---------------------------------------- | ------ | ---------------------- | ------------- |
-| Get orders made by customer    | api/orders?customerId={customer Id}      | GET    |                        | Order Array   |
-| Get order by order ID          | api/orders/{id}                          | GET    |                        | Order Object  |
+| Get orders made by customer    | [api/orders?customerId={customer Id}](https://bangazon-prototype-api.herokuapp.com/api/orders?customerId=1575559407787)      | GET    |                        | Order Array   |
+| Get order by order ID          | [api/orders/{id}](https://bangazon-prototype-api.herokuapp.com/api/orders/1575559407665)                          | GET    |                        | Order Object  |
 | Add a product to shopping cart | api/orders                               | POST   | CustomerProduct Object | Order Object  |
 | Purchase order in cart\*\*     | api/orders/{id}                          | PUT    | Order Object\*\*       |               |
 | Remove product from cart       | api/orders/{orderId}/products{productId} | DELETE |                        |               |
@@ -74,8 +74,8 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description            | Endpoint              | Method | Request Body       | Response Body      |
 | ---------------------- | --------------------- | ------ | ------------------ | ------------------ |
-| Get all product types  | api/productTypes      | GET    |                    | ProductType Array  |
-| Get product type by Id | api/productTypes/{id} | GET    |                    | ProductType Object |
+| Get all product types  | [api/productTypes](https://bangazon-prototype-api.herokuapp.com/api/productTypes)      | GET    |                    | ProductType Array  |
+| Get product type by Id | [api/productTypes/{id}](https://bangazon-prototype-api.herokuapp.com/api/productTypes/157550197010) | GET    |                    | ProductType Object |
 | Add a product type     | api/productTypes      | POST   | ProductType Object | ProductType Object |
 | Update a product type  | api/productTypes/{id} | PUT    | ProductType Object | ProductType Object |
 
@@ -83,9 +83,9 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                 | Endpoint                                    | Method | Request Body    | Response Body   |
 | --------------------------- | ------------------------------------------- | ------ | --------------- | --------------- |
-| Get all employees           | api/employees                               | GET    |                 | Employee Array  |
-| Get employee by Id          | api/employees/{id}                          | GET    |                 | Employee Object |
-| Search for employee by name | api/employees?firstName=John&lastName=Smith | GET    |                 | Employee Array  |
+| Get all employees           | [api/employees](https://bangazon-prototype-api.herokuapp.com/api/employees)                               | GET    |                 | Employee Array  |
+| Get employee by Id          | [api/employees/{id}](https://bangazon-prototype-api.herokuapp.com/api/employees/1575501974624)                          | GET    |                 | Employee Object |
+| Search for employee by name | [api/employees?firstName=John&lastName=Smith](http://bangazon-prototype-api.herokuapp.com/api/employees?firstName=Madi&lastName=Peper) | GET    |                 | Employee Array  |
 | Add an employee             | api/employees                               | POST   | Employee Object | Employee Object |
 | Update an employee          | api/employees/{id}                          | PUT    | Employee Object | Employee Object |
 
@@ -93,9 +93,9 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                   | Endpoint                               | Method | Request Body      | Response Body                 |
 | ----------------------------- | -------------------------------------- | ------ | ----------------- | ----------------------------- |
-| Get all departments           | api/departments                        | GET    |                   | Department Array              |
-| Get department by Id          | api/departments/{id}                   | GET    |                   | Department Object             |
-| Get department with employees | api/departments/{id}?include=employees | GET    |                   | Department Array w/ Employees |
+| Get all departments           | [api/departments](http://bangazon-prototype-api.herokuapp.com/api/departments)                        | GET    |                   | Department Array              |
+| Get department by Id          | [api/departments/{id}](http://bangazon-prototype-api.herokuapp.com/api/departments/1575559403193)                   | GET    |                   | Department Object             |
+| Get department with employees | [api/departments/{id}?include=employees](http://bangazon-prototype-api.herokuapp.com/api/departments/1575559403193?include=employees) | GET    |                   | Department Array w/ Employees |
 | Add a department              | api/departments                        | POST   | Department Object | Department Object             |
 | Update a department           | api/departments/{id}                   | PUT    | Department Object | Department Object             |
 
@@ -103,9 +103,9 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description               | Endpoint                      | Method | Request Body    | Response Body   |
 | ------------------------- | ----------------------------- | ------ | --------------- | --------------- |
-| Get available computers   | api/computers?available=true  | GET    |                 | Computer Array  |
-| Get unavailable computers | api/computers?available=false | GET    |                 | Computer Array  |
-| Get computer by Id        | api/computers/{id}            | GET    |                 | Computer Object |
+| Get available computers   | [api/computers?available=true](http://bangazon-prototype-api.herokuapp.com/api/computers?available=true)  | GET    |                 | Computer Array  |
+| Get unavailable computers | [api/computers?available=false](http://bangazon-prototype-api.herokuapp.com/api/computers?available=false) | GET    |                 | Computer Array  |
+| Get computer by Id        | [api/computers/{id}](http://bangazon-prototype-api.herokuapp.com/api/computers/1575566566339)            | GET    |                 | Computer Object |
 | Add computer              | api/computers                 | POST   | Computer Object | Computer Object |
 | Update computer record    | api/computers/{id}            | PUT    | Computer Object | Computer Object |
 | Delete a computer record  | api/computers/{id}            | DELETE |                 |                 |
@@ -114,8 +114,8 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 | Description                      | Endpoint                                         | Method | Request Body           | Response Body                       |
 | -------------------------------- | ------------------------------------------------ | ------ | ---------------------- | ----------------------------------- |
-| Get upcoming training programs   | api/trainingPrograms                             | GET    |                        | TrainingProgram Array               |
-| Get training program by Id       | api/trainingPrograms/{id}                        | GET    |                        | TrainingProgram Object w/ Employees |
+| Get upcoming training programs   | [api/trainingPrograms](http://bangazon-prototype-api.herokuapp.com/api/trainingPrograms)                             | GET    |                        | TrainingProgram Array               |
+| Get training program by Id       | [api/trainingPrograms/{id}](http://bangazon-prototype-api.herokuapp.com/api/trainingPrograms/1575598914183)                        | GET    |                        | TrainingProgram Object w/ Employees |
 | Add training program             | api/trainingPrograms                             | POST   | TrainingProgram Object | Training Program Object             |
 | Add employee to training program | api/trainingPrograms/{id}/employees              | POST   | Employee Object        | TrainingProgram Object w/ Employees |
 | Update training program          | api/trainingPrograms/{id}                        | PUT    | TrainingProgram Object | TrainingProgram Object              |
