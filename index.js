@@ -129,7 +129,10 @@ low(adapter)
     app.put("/api/productTypes/:id", productTypeController.updateProductType);
   })
   .then(() => {
-    app.listen(port, () =>
-      console.log(`👌👌👌 Listening on port ${port} 👌👌👌`)
-    );
+    app.listen(port, () => {
+      console.log("\x1b[35m%s\x1b[0m", "NOW RUNNING THE BANGAZON PROTOTYPE!");
+      console.log("\n");
+      console.log(`🐠 🐠 🐠 Listening on port ${port} 🐡 🐡 🐡`);
+      console.log(`🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊 🌊`);
+    });
   });
