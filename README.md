@@ -1,4 +1,4 @@
-# Bangazon API Prototype
+# 🐡 Bangazon API Prototype 🐠
 
 Bangazon has provided a prototype of their API while the back-end team builds a production ready one. It is populated with development data. It can be found online [here](https://bangazon-prototype-api.herokuapp.com/api/customers), although you will likely find that it is easier to run this on your local development machines.
 
