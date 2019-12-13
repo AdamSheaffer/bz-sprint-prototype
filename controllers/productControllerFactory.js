@@ -43,7 +43,10 @@ const productControllerFactory = db => {
   };
 
   const addProduct = (req, res, next) => {
-    const product = Object.assign(req.body, { id: Date.now() });
+    const product = Object.assign(req.body, {
+      id: Date.now(),
+      dateAdded: new Date().toISOString()
+    });
 
     db.get("products")
       .push(product)

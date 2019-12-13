@@ -38,7 +38,10 @@ const customerControllerFactory = db => {
   };
 
   const addCustomer = (req, res, next) => {
-    const customer = Object.assign(req.body, { id: Date.now() });
+    const customer = Object.assign(req.body, {
+      id: Date.now(),
+      createdDate: new Date().toISOString()
+    });
 
     db.get("customers")
       .push(customer)
