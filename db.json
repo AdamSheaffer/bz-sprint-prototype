@@ -387,7 +387,7 @@
       "id": 1575669394518
     },
     {
-      "productTypeId": 1575501970047,
+      "productTypeId": 1575501970829,
       "customerId": 1575559407755,
       "price": 12.25,
       "description": "Indoor & Outdoor use, Great for Bird Baths, lions head & Vase fountains and aquariums alike. NdFeB Magnets, aluminum oxide ceramic impeller shaft and epoxy resin guarantee the pump can work over 20,000 hours.",
@@ -545,10 +545,6 @@
     {
       "id": 1575501970046,
       "name": "Stands"
-    },
-    {
-      "id": 1575501970047,
-      "name": "Filters"
     },
     {
       "id": 157550197010,
