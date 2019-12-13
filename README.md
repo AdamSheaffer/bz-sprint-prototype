@@ -58,13 +58,14 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 ### Orders \*
 
-| Description                    | Endpoint                                                                                                                | Method | Request Body           | Response Body |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- | ------ | ---------------------- | ------------- |
-| Get orders made by customer    | [api/orders?customerId={customer Id}](https://bangazon-prototype-api.herokuapp.com/api/orders?customerId=1575559407787) | GET    |                        | Order Array   |
-| Get order by order ID          | [api/orders/{id}](https://bangazon-prototype-api.herokuapp.com/api/orders/1575559407665)                                | GET    |                        | Order Object  |
-| Add a product to shopping cart | api/orders                                                                                                              | POST   | CustomerProduct Object | Order Object  |
-| Purchase order in cart\*\*     | api/orders/{id}                                                                                                         | PUT    | Order Object\*\*       |               |
-| Remove product from cart       | api/orders/{orderId}/products{productId}                                                                                | DELETE |                        |               |
+| Description                    | Endpoint                                                                                                                                   | Method | Request Body           | Response Body                 |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ | ------ | ---------------------- | ----------------------------- |
+| Get orders made by customer    | [api/orders?customerId={customer Id}](https://bangazon-prototype-api.herokuapp.com/api/orders?customerId=1575559407787)                    | GET    |                        | Order Array                   |
+| Get order by order ID          | [api/orders/{id}](https://bangazon-prototype-api.herokuapp.com/api/orders/1575559407665)                                                   | GET    |                        | Order Object                  |
+| Get customer's shopping cart   | [api/orders?customerId={customerId}&cart=true](https://bangazon-prototype-api.herokuapp.com/api/orders?customerId=1575559407787&cart=true) | GET    |                        | Order Object w/ Product Array |
+| Add a product to shopping cart | api/orders                                                                                                                                 | POST   | CustomerProduct Object | Order Object                  |
+| Purchase order in cart\*\*     | api/orders/{id}                                                                                                                            | PUT    | Order Object\*\*       |                               |
+| Remove product from cart       | api/orders/{orderId}/products{productId}                                                                                                   | DELETE |                        |                               |
 
 \* Order objects that have a payment method that isn't NULL are considered complete and processed. An order that does not have a payment type would be considered a user's shopping cart. A user can have only one shopping cart, and therefore will only have a maximum of one Order record in the database with a NULL payment type at a given time.
 
