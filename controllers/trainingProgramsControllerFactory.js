@@ -15,6 +15,7 @@ const trainingProgramsControllerFactory = db => {
     const program = db
       .get("trainingPrograms")
       .find({ id: +id })
+      .clone()
       .value();
 
     if (!program) return res.status(404).send();
