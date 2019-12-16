@@ -1,11 +1,13 @@
 const customerControllerFactory = db => {
   const getAllCustomers = (req, res, next) => {
     const { q } = req.query;
-    let customersRef = db.get("customers").filter();
+    let customersRef = db.get("customers");
 
     if (q) {
       customersRef = customersRef.filter(customer => {
-        return `${customer.firstName} ${customer.lastName}`.includes(q);
+        return `${customer.firstName} ${customer.lastName}`
+          .toLowerCase()
+          .includes(q.toLowerCase());
       });
     }
 
