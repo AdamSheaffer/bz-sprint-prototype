@@ -127,6 +127,7 @@ low(adapter)
     app.get("/api/productTypes/:id", productTypeController.getProductType);
     app.post("/api/productTypes", productTypeController.addProductType);
     app.put("/api/productTypes/:id", productTypeController.updateProductType);
+    app.get("/api/revenueReport", productTypeController.getRevenueBreakdown);
   })
   .then(() => {
     app.listen(port, () => {

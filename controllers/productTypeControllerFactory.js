@@ -47,11 +47,37 @@ const productTypeControllerFactory = db => {
     return res.json(updated);
   };
 
+  const getRevenueBreakdown = (req, res, next) => {
+    const breakdown = db.get("productTypes").map(pt => {
+      const products = db
+        .get("products")
+        .filter({ productTypeId: pt.id })
+        .value();
+
+      const totalRevenue = db
+        .get("orderProducts")
+        .map(op => {
+          const product = products.find(p => p.id === op.productId);
+          return !!product ? product.price : 0;
+        })
+        .reduce((p, c) => p + c, 0);
+
+      return {
+        productTypeId: pt.id,
+        productType: pt.name,
+        totalRevenue
+      };
+    });
+
+    return res.json(breakdown);
+  };
+
   return {
     getAllProductTypes,
     getProductType,
     addProductType,
-    updateProductType
+    updateProductType,
+    getRevenueBreakdown
   };
 };
 
