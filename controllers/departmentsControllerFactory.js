@@ -27,6 +27,7 @@ const departmentControllerFactory = db => {
     const department = db
       .get("departments")
       .find({ id: +id })
+      .clone()
       .assign({ employees: [] })
       .value();
 

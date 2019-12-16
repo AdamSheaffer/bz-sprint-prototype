@@ -10,6 +10,7 @@ const productTypeControllerFactory = db => {
     const productType = db
       .get("productTypes")
       .find({ id })
+      .clone()
       .value();
 
     if (!productType) return res.status(404).send();

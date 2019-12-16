@@ -19,6 +19,7 @@ const customerControllerFactory = db => {
     const customer = db
       .get("customers")
       .find({ id })
+      .clone()
       .value();
 
     if (!customer) return res.status(404).send();
