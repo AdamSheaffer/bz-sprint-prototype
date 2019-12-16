@@ -16,7 +16,17 @@ const employeeControllerFactory = db => {
     const employee = db
       .get("employees")
       .find({ id: +id })
+      .clone()
       .value();
+
+    if (!employee) return res.status(404).send();
+
+    const computer = db
+      .get("computers")
+      .find({ id: employee.computerId })
+      .value();
+
+    employee.computer = computer;
 
     return res.json(employee);
   };

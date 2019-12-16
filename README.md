@@ -83,13 +83,13 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 ### Employees
 
-| Description                 | Endpoint                                                                                                                               | Method | Request Body    | Response Body   |
-| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------- | --------------- |
-| Get all employees           | [api/employees](https://bangazon-prototype-api.herokuapp.com/api/employees)                                                            | GET    |                 | Employee Array  |
-| Get employee by Id          | [api/employees/{id}](https://bangazon-prototype-api.herokuapp.com/api/employees/1575501974624)                                         | GET    |                 | Employee Object |
-| Search for employee by name | [api/employees?firstName=John&lastName=Smith](http://bangazon-prototype-api.herokuapp.com/api/employees?firstName=Madi&lastName=Peper) | GET    |                 | Employee Array  |
-| Add an employee             | api/employees                                                                                                                          | POST   | Employee Object | Employee Object |
-| Update an employee          | api/employees/{id}                                                                                                                     | PUT    | Employee Object | Employee Object |
+| Description                 | Endpoint                                                                                                                               | Method | Request Body    | Response Body                      |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------ | --------------- | ---------------------------------- |
+| Get all employees           | [api/employees](https://bangazon-prototype-api.herokuapp.com/api/employees)                                                            | GET    |                 | Employee Array                     |
+| Get employee by Id          | [api/employees/{id}](https://bangazon-prototype-api.herokuapp.com/api/employees/1575501974624)                                         | GET    |                 | Employee Object w/ Computer Object |
+| Search for employee by name | [api/employees?firstName=John&lastName=Smith](http://bangazon-prototype-api.herokuapp.com/api/employees?firstName=Madi&lastName=Peper) | GET    |                 | Employee Array                     |
+| Add an employee             | api/employees                                                                                                                          | POST   | Employee Object | Employee Object                    |
+| Update an employee          | api/employees/{id}                                                                                                                     | PUT    | Employee Object | Employee Object                    |
 
 ### Departments
 
@@ -250,13 +250,20 @@ Bangazon has provided a prototype of their API while the back-end team builds a 
 
 ```js
 {
-    "id": 1575501974625,
-    "firstName": "Madi",
-    "lastName": "Peper",
-    "departmentId": 1575559403193,
-    "isSupervisor": true,
-    "computerId": 1575566566334,
-    "email": "everythingisawesome@bangzon.com"
+    "id": 1575501974624,
+    "firstName": "Adam",
+    "lastName": "Sheaffer",
+    "departmentId": 1575559403192,
+    "isSupervisor": false,
+    "computerId": 1575566566333,
+    "email": "iamtheboss@bangazon.com",
+    "computer": {
+        "id": 1575566566333,
+        "purchaseDate": "2016-01-01T23:28:56.782Z",
+        "decomissionDate": null,
+        "make": "Apple",
+        "model": "Macbook Pro"
+    }
 }
 ```
 
