@@ -13,7 +13,7 @@ const paymentTypesControllerFactory = db => {
     const paymentType = db
       .get("paymentTypes")
       .find({ id })
-      .valeu();
+      .value();
 
     if (!paymentType) return res.status(404).send();
 
