@@ -97,7 +97,7 @@ low(adapter)
     // Payment Types
     const paymentTypeController = paymentTypeFactory(db);
     app.get("/api/paymentTypes", paymentTypeController.getAllPaymentTypes);
-    app.get("/api/paymentType/:id", paymentTypeController.getPaymentType);
+    app.get("/api/paymentTypes/:id", paymentTypeController.getPaymentType);
     app.post("/api/paymentTypes", paymentTypeController.addPaymentType);
     app.delete(
       "/api/paymentTypes/:id",
