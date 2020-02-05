@@ -56,7 +56,7 @@ const computersControllerFactory = db => {
     const updated = Object.assign(req.body, { id: +id });
 
     db.get("computers")
-      .find({ id })
+      .find({ id: +id })
       .assign(updated)
       .write();
 
