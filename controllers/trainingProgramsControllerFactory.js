@@ -77,7 +77,7 @@ const trainingProgramsControllerFactory = db => {
       .push({
         id: Date.now(),
         employeeId: employee.id,
-        programId
+        trainingProgramId: programId
       })
       .write();
 
