@@ -56,7 +56,7 @@ const orderControllerFactory = db => {
       if (cart) {
         const shoppingCart = orders.find(o => !o.userPaymentId);
 
-        return res.json(shoppingCart);
+        return shoppingCart ? res.json(shoppingCart) : res.status(204).send();
       }
 
       return res.json(orders);
