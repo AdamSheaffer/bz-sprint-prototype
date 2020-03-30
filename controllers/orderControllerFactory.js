@@ -5,7 +5,7 @@ const orderControllerFactory = db => {
       .find({ id: orderId })
       .value();
 
-    if (!order) return res.status(404).send();
+    if (!order) return null;
 
     const products = db
       .get("orderProducts")
@@ -86,16 +86,16 @@ const orderControllerFactory = db => {
 
     let currentPendingOrder = db
       .get("orders")
-      .find(o => o.customerId === customerId && !o.userPaymentId)
+      .find(o => o.customerId === +customerId && !o.userPaymentId)
       .value();
 
     if (!currentPendingOrder) {
       currentPendingOrder = {
         id: Date.now(),
-        customerId,
+        customerId: +customerId,
         userPaymentId: null
       };
-      db.get("order")
+      db.get("orders")
         .push(currentPendingOrder)
         .write();
     }
@@ -103,7 +103,7 @@ const orderControllerFactory = db => {
     const orderProduct = {
       id: Date.now(),
       orderId: currentPendingOrder.id,
-      productId
+      productId: +productId
     };
 
     db.get("orderProducts")
